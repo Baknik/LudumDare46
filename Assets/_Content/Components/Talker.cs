@@ -8,5 +8,7 @@ public class Talker : MonoBehaviour, IComponentData
 {
     public Transform DialogDisplay;
     public Text DialogText;
-    public string Dialog;
+    public string HappyDialog;
+    public string MehDialog;
+    public string SadDialog;
 }

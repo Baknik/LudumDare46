@@ -7,4 +7,6 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour, IComponentData
 {
     public Text MoneyText;
+    public Text PartyHappinessText;
+    public Text ScoreText;
 }

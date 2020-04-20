@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(PlayerInput))]
 public class Input : MonoBehaviour
@@ -43,5 +44,10 @@ public class Input : MonoBehaviour
     public void OnInteract(InputAction.CallbackContext context)
     {
         this.InteractInput = context.ReadValueAsButton();
+    }
+
+    public void OnQuit(InputAction.CallbackContext context)
+    {
+        Application.Quit();
     }
 }
